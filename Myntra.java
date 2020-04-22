@@ -15,6 +15,10 @@ public class Wish {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
+		//Disable Chrome Browser Notifications
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
+		
 		// Set the chromedriver.exe file to JAVA class
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		
