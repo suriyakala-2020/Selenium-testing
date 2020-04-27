@@ -52,7 +52,7 @@ Thread.sleep(3000);
 action.moveToElement(tar).perform();
 
 //Get Displacement value of Dio
-String dioDisplacement = driver.findElementByXPath("(//ul[@class='tab_content']/li/span)[22]").getText();
+String dioDisplacement = driver.findElementByXPath("(//ul[@class='tab_content'])[2]//span[text()='Displacement']/following-sibling::span").getText();
 System.out.println("Displacement value of Dio : "+(dioDisplacement));
 float Displacement1 = Float.parseFloat(dioDisplacement.replaceAll("c", ""));
 System.out.println(Displacement1);
@@ -72,7 +72,7 @@ Thread.sleep(3000);
 action.moveToElement(tar1).perform();
 
 //Get Displacement value of Activa
-String activaDisplacement = driver.findElementByXPath("(//ul[@class='tab_content']/li/span)[22]").getText();
+String activaDisplacement = driver.findElementByXPath("(//ul[@class='tab_content'])[2]//span[text()='Displacement']/following-sibling::span").getText();
 System.out.println("Displacement value of Activa : "+(activaDisplacement));
 float Displacement2 = Float.parseFloat(activaDisplacement.replaceAll("c", ""));
 System.out.println(Displacement2);
