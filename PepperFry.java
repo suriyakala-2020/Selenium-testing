@@ -94,7 +94,7 @@ driver.findElementByXPath("//a[@class='pf-icon pf-icon-heart header_tab wistlist
 Thread.sleep(3000);
 
 // Move Pressure Cooker only to Cart from Wishlist
-WebElement tar3 = driver.findElementByXPath("(//a[@class='addtocart_icon'])[2]");
+WebElement tar3 = driver.findElementByXPath("//a[@data-wishlistitem='1676140']");
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("arguments[0].click()", tar3);
 Thread.sleep(3000);
