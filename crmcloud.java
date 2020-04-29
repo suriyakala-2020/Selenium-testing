@@ -149,7 +149,7 @@ if (activity.contains("Project Status")) {
 	System.out.println("Meeting not yet added to Contact");
 }
 
-//To close browser
+//close browser
 driver.quit();
 	}
 
