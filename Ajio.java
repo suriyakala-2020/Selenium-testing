@@ -118,7 +118,7 @@ public class Ajio {
 		//Enter Coupon Code
 		driver.findElementByXPath("//input[@id='couponCodeInput']").sendKeys(couponCode);
 		
-		//Apply
+		//Click Apply
 		driver.findElementByXPath("//button[text()='Apply']").click();
 		Thread.sleep(3000);
 		//Verify the Coupon Savings amount(round off if it in decimal) under Order Summary and the matches the amount calculated
